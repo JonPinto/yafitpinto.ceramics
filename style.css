@@ -1,7 +1,8 @@
 .LOGOdiv {
     margin-top: 0px;
-    background: linear-gradient(to top,#00000000,#ff7961);
+    background: linear-gradient(to top, #00000000, #ff7961);
 }
+
 .centerIMG {
     display: block;
     margin-left: auto;
@@ -9,11 +10,33 @@
     width: 400px;
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.193));
 }
+
 h2 {
     text-align: center;
-    color: white; 
+    color: white;
     font-family: sans-serif;
     font-weight: bold;
     letter-spacing: 9px;
-    text-shadow:1px 1px 7px rgba(0, 0, 0, 0.208);
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.208);
+}
+
+.navLOGO {
+    width: 200px
+}
+
+.navTEXT {
+    letter-spacing: 8px;
+    word-spacing: 5px;
+}
+
+.menu_list {
+    text-align: center;
+    font-size: x-large;
+    display: block;
+}
+
+.social_media {
+    color: white;
+    font-size: xx-large;
+    display: flex
 }
