@@ -20,26 +20,74 @@
 }
 
 #instafeed-container {
-    margin: 1%;
+    background-color: #212529;
 }
 
-@media (min-width: 600px) {
+#instafeed-container div {
+    display: inline;
+    position: relative;
+    text-align: center;
+    font-size: larger;
+    color: #21252900;
+}
+
+#instafeed-container div:hover {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    text-shadow: 1px 1px 5px black;
+    transition: 0.2s;
+}
+
+
+#instafeed-container span {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#instafeed-container span:hover {
+}
+
+
+#instafeed-container img:hover {
+    box-shadow: 5px 5px rgb(255, 255, 255);
+    -webkit-transition: box-shadow 0.4s;
+}
+
+@media (min-width: 900px) {
     #instafeed-container img {
-        width: 25%;
-        border-style: solid;
-        border-color: rgba(255, 255, 255, 0);
+        width: 20%;
+        margin: 2.5%;
+        border-style: hidden;
+        border-color: rgb(255, 0, 0);
         border-radius: 15%;
-        border-width: 5%;
+        -webkit-transition: box-shadow 0.4s;
+
+    }
+}
+
+@media (max-width: 899px) {
+    #instafeed-container img {
+        width: 29%;
+        margin: 2%;
+        border-style: hidden;
+        border-color: rgb(255, 0, 0);
+        border-radius: 15%;
+        -webkit-transition: box-shadow 0.4s;
     } 
 }
 
 @media (max-width: 599px) {
     #instafeed-container img {
-        width: 50%;
-        border-style: solid;
+        width: 45%;
+        margin: 2.5%;
+        border-style: hidden;
         border-color: rgba(255, 255, 255, 0);
         border-radius: 15%;
-        border-width: 5%;
+        -webkit-transition: box-shadow 0.4s;
     } 
 }
 

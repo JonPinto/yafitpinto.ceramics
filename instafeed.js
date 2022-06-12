@@ -1,6 +1,6 @@
 var userFeed = new Instafeed({
     get: 'user',
-    template: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>',
+    template: '<a href="{{link}}"><div><img src="{{image}}" /><span>{{caption}}</span></div></a>',
     limit: 8,
     target: "instafeed-container",
     resolution: 'low_resolution',
