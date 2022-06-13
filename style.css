@@ -16,7 +16,34 @@
 .social_media {
     color: white;
     font-size: xx-large;
-    display: flex
+    display: flex;
+    margin-right: 20px
+}
+
+.gradient {
+    background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}
+
+.image {
+    width: 100%; height: 400px;
+    background-image: url("./20220613_100515.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image > h1 {
+    font-size: xxx-large;
+    color: white; 
+    font-weight: bold;
+    text-align: center;
+    padding-top: 150px;
+    position: absolute; left:0; top: 0; width: 100%; height: 300px;
+    background-image: linear-gradient(to top,transparent, #212529 )
 }
 
 #instafeed-container {
@@ -41,16 +68,11 @@
 
 
 #instafeed-container span {
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-#instafeed-container span:hover {
-}
-
 
 #instafeed-container img:hover {
     box-shadow: 5px 5px rgb(255, 255, 255);
